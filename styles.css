@@ -12,10 +12,7 @@ body{
     padding: 7% 10% 7% 7%!important;
     text-align: center !important;
     color: white !important;
-    @media(max-width: 480px){
-        padding-bottom: 0%;
-        height: 10%;
-    }
+
     font-family: "Roboto Mono" !important;    
 }
 .logo{
