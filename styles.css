@@ -11,10 +11,11 @@
   body{
     background-image: url(images/testgif-min.gif);
     min-height: 100vh;
-      background-attachment: fixed; 
+    filter: blur(10x);
+    background-attachment: fixed; 
     background-size: cover; /* Ensures the background covers the entire screen */
     background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: center; /* Centers the background image */
+    background-position: center; /*Centers the background image */
       padding: 7% 7% 2% 7%!important;
       text-align: center !important;
       color: white !important;
@@ -46,12 +47,12 @@
 
   .logo{
       width: 200px;
-      mix-blend-mode:inherit;
+
   }
   
   .btn{
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #DBAB3D 30%, #DBAB3D 40%, transparent 80%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #DBAB3D 25%, #DBAB3D 62.5%, #DBAB3D 100%) !important;
       color: black !important;
       border-width: 0  !important;
   }
@@ -66,7 +67,7 @@
   h1 {
     background: linear-gradient(
         to right,
-        #FEDB37 0%, #FDB931 8%, #F7E58E 30%, #cba64f 40%
+        #FEDB37 0%, #FDB931 8%, #F7E58E 30%, #DBAB3D 40%
     );
     font-family:"Jersey 25";
     font-weight:  11100px !important;
