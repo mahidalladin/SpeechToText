@@ -9,6 +9,11 @@
   }
   
   body{
+    background-image: url(images/testgif-min.gif);
+    min-height: 100vh;
+    background-size: cover; /* Ensures the background covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center; /* Centers the background image */
       padding: 7% 7% 2% 7%!important;
       text-align: center !important;
       color: white !important;
