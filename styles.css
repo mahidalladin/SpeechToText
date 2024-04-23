@@ -9,7 +9,7 @@
   }
   
   body{
-      padding: 7% 10% 7% 7%!important;
+      padding: 7% 7% 2% 7%!important;
       text-align: center !important;
       color: white !important;
       overflow-x: hidden;
@@ -20,10 +20,10 @@
     /* Adjust styles for smaller screens */
     .contained {
         width: 100%; /* Set the container width to cover the full screen */
-        padding: 20px; /* Add padding as needed */
+       
     }
     h1{
-        font-size:30px !important;
+        font-size:35px !important;
     }
 
     /* Adjust other styles as needed for smaller screens */
@@ -31,7 +31,7 @@
 @media only screen and (min-width: 600px) and (max-width:992px){
     .contained {
         width: 100%; /* Set the container width to cover the full screen */
-        padding: 20px; /* Add padding as needed */
+       
     }
     h1{
         font-size:40px !important;
