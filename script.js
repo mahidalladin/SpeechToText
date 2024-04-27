@@ -1,5 +1,6 @@
 
 var SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+
 if (SpeechRecognition) {
   var recognition = new SpeechRecognition();
   var textbox = document.querySelector('#textbox1');
@@ -14,11 +15,13 @@ if (SpeechRecognition) {
 
   function updateButtonState(recording) {
     if (recording) {
-      startBtn.innerHTML = '<i class="fa-solid fa-pause" style="color: #000000;"></i> Pause Recording';
-      instructions.textContent = "Recording in progress. Click 'Pause Recording' to pause.";
+      // startBtn.innerHTML = '<i class="fa-solid fa-pause" style="color: #000000;"></i> Pause Recording';
+   
+      instructions.textContent = "Recording in progress.";
     } else {
-      startBtn.innerHTML = '<i class="fa-solid fa-play" style="color: #000000;"></i> Resume Recording';
-      instructions.textContent = "Recording paused. Click 'Resume Recording' to continue.";
+      // startBtn.innerHTML = '<i class="fa-solid fa-play" style="color: #000000;"></i> Resume Recording';
+    
+      instructions.textContent = "Recording paused.";
     }
     isRecording = recording;
   }
