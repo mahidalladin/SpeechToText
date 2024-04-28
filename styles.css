@@ -1,17 +1,4 @@
-/* #video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    filter: blur(1000px) !important;  
-    -webkit-filter: blur(800px) !important;
-
-  } */
-   
-  body {
+body {
     min-height: 100vh;
     background-image: url(images/testgif-min.gif);
     background-size: cover;
@@ -39,11 +26,33 @@ body::before {
     filter: blur(4px); /* Apply blur only to the background */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
+h1 {
+  background: linear-gradient(
+      to right,
+      #FEDB37 0%, #FDB931 8%, #F7E58E 30%, #DBAB3D 40%
+  );
+  font-family:"Jersey 25";
+  font-weight:  11100px !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+textarea {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 500px; /* Set a maximum width for responsiveness */
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allow vertical resizing */
+  margin-top: 10px !important;
+}
 
   @media only screen and (max-width: 600px) {
     /* Adjust styles for smaller screens */
-    .contained {
-        width: 100%; /* Set the container width to cover the full screen */
+    .whole-content {
+      width: 100%; /* Set the container width to cover the full screen */
        
     }
     h1{
@@ -57,7 +66,7 @@ body::before {
     /* Adjust other styles as needed for smaller screens */
 }
 @media only screen and (min-width: 600px) and (max-width:992px){
-    .contained {
+    .whole-content {
         width: 100%; /* Set the container width to cover the full screen */
        
     }
@@ -81,20 +90,15 @@ body::before {
 
   }
   .image-btn{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 100% !important;
     background-position: center;  /* Center image  */
     background-size: cover;
     border: 0px;
     margin-top: 5px;
   }
-  .test-img{
-    width: 730px;
-    height: 290px;
- 
 
-  }
   #start-btn1 {
     position: relative;
     background-color: transparent;
@@ -130,20 +134,7 @@ body::before {
     transition: 0s
   }
  
-.container{
-    display: flex;
-            justify-content: center;
-            align-items: center;
-       
-}
-textarea {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 500px; /* Set a maximum width for responsiveness */
-    padding: 10px;
-    border: 1px solid #ccc;
-    resize: vertical; /* Allow vertical resizing */
-   margin-top: 10px !important;
-}
+
   
   .btn{
       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #DBAB3D 30%, #DBAB3D 40%, transparent 80%),
@@ -159,20 +150,7 @@ textarea {
         background-position: 100% 50%;
     }
   }
-  h1 {
-    background: linear-gradient(
-        to right,
-        #FEDB37 0%, #FDB931 8%, #F7E58E 30%, #DBAB3D 40%
-    );
-    font-family:"Jersey 25";
-    font-weight:  11100px !important;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-  }
+
 
   .form-control{
     background-color: #e056fd;
@@ -215,8 +193,3 @@ textarea {
       padding: 5px 10px;
       cursor: pointer;
   }
-
-  .carousel-control-prev,
-.carousel-control-next {
-  display: none !important;
-}
